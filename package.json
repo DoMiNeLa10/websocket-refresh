@@ -1,0 +1,26 @@
+{
+  "name": "websocket-refresh",
+  "version": "0.1.0",
+  "description": "A node.js refresh socked implemented using WebSockets",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DoMiNeLa10/websocket-refresh.git"
+  },
+  "keywords": [
+    "websocket",
+    "refresh"
+  ],
+  "author": "DoMiNeLa10",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/DoMiNeLa10/websocket-refresh/issues"
+  },
+  "homepage": "https://github.com/DoMiNeLa10/websocket-refresh#readme",
+  "dependencies": {
+    "websocket": "^1.0.25"
+  }
+}

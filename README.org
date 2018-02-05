@@ -1,0 +1,35 @@
+#+TITLE: =websocket-refresh= - a simple WebSocket refresh server
+
+This repository provides a server that can be used to refresh all connected
+clients at once. It's useful in intranets, where each of connected kiosks
+would require manual refreshing otherwise.
+
+Code in =server.js= is a bit ugly, but it's been used in production already.
+
+* Setting up
+1. installing
+   1. Clone this repository
+   2. ~npm install~
+2. Setting up clients
+   1. Add =client.js= to each client page
+3. Running (and using the server)
+   1. Run =server.js= with node.js
+   2. Type =enter= in the terminal window to send refresh command to every
+      connected client
+
+In order to achieve best results, your HTTP server should be set up to not
+send =Expires= with a future date in headers. Refer to documentation of the
+HTTP server you use. Without that, even private or incognito mode in client
+browsers won't help.
+
+This server assumes it's running on the same machine on which the HTTP server
+is running. By default it uses port =8888=, but that can be customized by
+changing value of the constant ~port~ in =client.js= and =server.js=.
+
+If refresh server is unavailable, clients will try to reconnect after 10
+minutes by default. This time can be customized by changing value of
+~retryTime~ in =client.js=.
+
+=client.js= is written in ES6, but it can be transpiled with babel to work
+with older browsers. Since it uses ~WebSocket~, browsers need to have support
+for it to work.
