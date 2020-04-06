@@ -8,18 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DoMiNeLa10/websocket-refresh.git"
+    "url": "git+https://github.com/UwUnyaa/websocket-refresh.git"
   },
   "keywords": [
     "websocket",
     "refresh"
   ],
-  "author": "DoMiNeLa10",
+  "author": "UwUnyaa",
   "license": "Unlicense",
   "bugs": {
-    "url": "https://github.com/DoMiNeLa10/websocket-refresh/issues"
+    "url": "https://github.com/UwUnyaa/websocket-refresh/issues"
   },
-  "homepage": "https://github.com/DoMiNeLa10/websocket-refresh#readme",
+  "homepage": "https://github.com/UwUnyaa/websocket-refresh#readme",
   "dependencies": {
     "websocket": "^1.0.25"
   }
